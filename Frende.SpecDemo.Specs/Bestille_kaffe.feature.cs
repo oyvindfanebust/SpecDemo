@@ -65,17 +65,34 @@ namespace Frende.SpecDemo.Specs
         }
         
         [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Bestille en enkel espresso")]
+        public virtual void BestilleEnEnkelEspresso()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bestille en enkel espresso", ((string[])(null)));
+#line 6
+this.ScenarioSetup(scenarioInfo);
+#line 7
+ testRunner.Given("at jeg har valgt en espresso");
+#line 8
+ testRunner.When("jeg bestiller");
+#line 9
+ testRunner.Then("skal prisen være 10 kr");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Bestille en dobbel espresso")]
         public virtual void BestilleEnDobbelEspresso()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bestille en dobbel espresso", ((string[])(null)));
-#line 6
+#line 11
 this.ScenarioSetup(scenarioInfo);
-#line 7
+#line 12
  testRunner.Given("at jeg har valgt en dobbel espresso");
-#line 8
+#line 13
  testRunner.When("jeg bestiller");
-#line 9
+#line 14
  testRunner.Then("skal prisen være 20 kr");
 #line hidden
             this.ScenarioCleanup();
@@ -86,13 +103,13 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void BestilleEnCappucino()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bestille en cappucino", ((string[])(null)));
-#line 11
+#line 16
 this.ScenarioSetup(scenarioInfo);
-#line 12
+#line 17
  testRunner.Given("at jeg har valgt en cappucino");
-#line 13
+#line 18
  testRunner.When("jeg bestiller");
-#line 14
+#line 19
  testRunner.Then("skal prisen være 20 kr");
 #line hidden
             this.ScenarioCleanup();
@@ -103,15 +120,15 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void BestillingEnDobbelEspressoOgEnCappucinoSkalGiRabatt()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bestilling en dobbel espresso og en cappucino skal gi rabatt", ((string[])(null)));
-#line 16
+#line 21
 this.ScenarioSetup(scenarioInfo);
-#line 17
+#line 22
  testRunner.Given("at jeg har valgt en dobbel espresso");
-#line 18
+#line 23
  testRunner.And("at jeg har valgt en cappucino");
-#line 19
+#line 24
  testRunner.When("jeg bestiller");
-#line 20
+#line 25
  testRunner.Then("skal prisen være 35 kr");
 #line hidden
             this.ScenarioCleanup();
