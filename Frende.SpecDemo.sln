@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frende.SpecDemo.Web", "Frende.SpecDemo.Web\Frende.SpecDemo.Web.csproj", "{BEE0D829-B8BB-46B1-9DA8-FA6D4B9DD10B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frende.SpecDemo.Tests", "Frende.SpecDemo.Tests\Frende.SpecDemo.Tests.csproj", "{588BC1EA-8EB1-4DA3-BD9C-EE234FC7604C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frende.SpecDemo.Specs", "Frende.SpecDemo.Specs\Frende.SpecDemo.Specs.csproj", "{67C531A0-EB7E-4BF6-AFA9-216382C62E3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEE0D829-B8BB-46B1-9DA8-FA6D4B9DD10B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE0D829-B8BB-46B1-9DA8-FA6D4B9DD10B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE0D829-B8BB-46B1-9DA8-FA6D4B9DD10B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE0D829-B8BB-46B1-9DA8-FA6D4B9DD10B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{588BC1EA-8EB1-4DA3-BD9C-EE234FC7604C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{588BC1EA-8EB1-4DA3-BD9C-EE234FC7604C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{588BC1EA-8EB1-4DA3-BD9C-EE234FC7604C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{588BC1EA-8EB1-4DA3-BD9C-EE234FC7604C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C531A0-EB7E-4BF6-AFA9-216382C62E3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C531A0-EB7E-4BF6-AFA9-216382C62E3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C531A0-EB7E-4BF6-AFA9-216382C62E3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C531A0-EB7E-4BF6-AFA9-216382C62E3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
