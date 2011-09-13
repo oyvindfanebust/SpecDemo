@@ -1,0 +1,19 @@
+Arbeidsprosess
+
+* Plukke sak i agile Zen
+
+* Skrive akseptansetest sammen med forretningssiden
+
+* Legge inn akseptansetest i Frende.Shop.Specs 
+  (alle eksempler / scenario er nå gule)
+
+* Begynne å implementere step definitions 
+  (ett steg om gangen)
+
+* Skrive unit test
+
+* Implementere kode
+
+* Refaktorer på unit nivå
+
+* Refaktorer på infrastrukturnivå
