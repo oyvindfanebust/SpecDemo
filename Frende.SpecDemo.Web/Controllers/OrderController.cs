@@ -14,8 +14,8 @@ namespace Frende.SpecDemo.Web.Controllers
 		public ActionResult Price(ProductModel product)
 		{
 			var calculator = new Calculator();
-			var price = calculator.GetPrice(product.ProductName);
-			ViewBag.Price = price; 
+			var price = calculator.GetPrice(new[] { product.ProductName });
+			ViewBag.Price = price;
 			return View();
 		}
 	}
