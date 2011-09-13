@@ -10,23 +10,7 @@ namespace Frende.SpecDemo.Specs
 		public void GivenIHaveEnteredSomethingIntoTheCalculator()
 		{
 			FeatureContext.Current.Get<Browser>().GoTo("http://localhost:61604/Order");
-			FeatureContext.Current.Get<Browser>().SelectList("product").Select("dbl_espresso");
-		}
-	}
-
-	[Binding]
-	public static class WatinSupport
-	{
-		[BeforeFeature]
-		public static void BeforeWebFeature()
-		{
-			FeatureContext.Current.Set<Browser>(new IE());
-		}
-
-		[AfterFeature]
-		public static void AfterWebFeature()
-		{
-			FeatureContext.Current.Get<Browser>().Dispose();
+			FeatureContext.Current.Get<Browser>().SelectList("products").SelectByValue("dbl_espresso");
 		}
 	}
 }
