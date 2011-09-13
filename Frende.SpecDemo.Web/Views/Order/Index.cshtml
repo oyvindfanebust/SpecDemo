@@ -1,9 +1,10 @@
-﻿<select id="products">
-<option value="-"></option>
-<option value="espresso">Enkel espresso</option>
-<option value="dbl_espresso">Dobbel espresso</option>
-<option value="cappucino">Cappucino</option>
-</select>
-<input type="submit" id="order" value="Bestill"/>
-
-<div id="price">20 kr</div>
+﻿@using (Html.BeginForm("Price", "Order"))
+{
+	<select name="productname" id="productname">
+		<option value="-"></option>
+		<option value="espresso">Enkel espresso</option>
+		<option value="dbl_espresso">Dobbel espresso</option>
+		<option value="cappucino">Cappucino</option>
+	</select>
+	<input type="submit" id="order" value="Bestill" />
+}

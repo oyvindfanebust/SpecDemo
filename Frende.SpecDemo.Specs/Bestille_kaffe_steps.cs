@@ -11,7 +11,7 @@ namespace Frende.SpecDemo.Specs
 		public void AtJegHarValgtEnDobbelEspresso(string product)
 		{
 			Browser.GoTo("http://localhost:61604/Order");
-			Browser.SelectList("products").Select(product);
+			Browser.SelectList("productname").Select(product);
 		}
 
 		[When(@"jeg bestiller")]
