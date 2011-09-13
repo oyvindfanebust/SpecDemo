@@ -70,6 +70,8 @@
       <DependentUpon>Bestille_kaffe.feature</DependentUpon>
     </Compile>
     <Compile Include="Bestille_kaffe_steps.cs" />
+    <Compile Include="OrderPage.cs" />
+    <Compile Include="PageExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WatinSupport.cs" />
   </ItemGroup>

@@ -7,22 +7,27 @@ namespace Frende.SpecDemo.Specs
 	[Binding]
 	public class Bestille_kaffe_steps
 	{
+		private static OrderPage OrderPage
+		{
+			get { return Browser.Page<OrderPage>(); }
+		}
+
 		[Given(@"at jeg er på ordresiden")]
 		public void GittAtJegErPaOrdresiden()
 		{
-			Browser.GoTo("http://localhost:61604/Order");			
+			OrderPage.GoTo();
 		}
 
 		[Given("at jeg har valgt en (.*)")]
 		public void AtJegHarValgtEnDobbelEspresso(string product)
 		{
-			Browser.CheckBox(Find.ByLabelText(product)).Click();
+			OrderPage.SelectProduct(product);
 		}
 
 		[When(@"jeg bestiller")]
 		public void NarJegBestiller()
 		{
-			Browser.Button("order").Click();
+			OrderPage.Order();
 		}
 
 		[Then(@"skal prisen være ([0-9]+) kr")]
