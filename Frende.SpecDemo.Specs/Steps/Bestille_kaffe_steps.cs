@@ -1,8 +1,10 @@
-﻿using NUnit.Framework;
+﻿using Frende.SpecDemo.Specs.Pages;
+using Frende.SpecDemo.Specs.Support;
+using NUnit.Framework;
 using TechTalk.SpecFlow;
 using WatiN.Core;
 
-namespace Frende.SpecDemo.Specs
+namespace Frende.SpecDemo.Specs.Steps
 {
 	[Binding]
 	public class Bestille_kaffe_steps

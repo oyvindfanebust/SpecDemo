@@ -1,6 +1,6 @@
 ﻿using WatiN.Core;
 
-namespace Frende.SpecDemo.Specs
+namespace Frende.SpecDemo.Specs.Pages
 {
 	[Page(UrlRegex = "/Order")]
 	public class OrderPage : Page

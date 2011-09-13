@@ -10,7 +10,7 @@
 //  </auto-generated>
 // ------------------------------------------------------------------------------
 #region Designer generated code
-namespace Frende.SpecDemo.Specs
+namespace Frende.SpecDemo.Specs.Features
 {
     using TechTalk.SpecFlow;
     

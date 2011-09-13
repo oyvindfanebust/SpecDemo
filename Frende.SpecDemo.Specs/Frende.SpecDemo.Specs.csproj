@@ -64,20 +64,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bestille_kaffe.feature.cs">
+    <Compile Include="Features\Bestille_kaffe.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Bestille_kaffe.feature</DependentUpon>
     </Compile>
-    <Compile Include="Bestille_kaffe_steps.cs" />
-    <Compile Include="OrderPage.cs" />
-    <Compile Include="PageExtensions.cs" />
+    <Compile Include="Steps\Bestille_kaffe_steps.cs" />
+    <Compile Include="Pages\OrderPage.cs" />
+    <Compile Include="Support\PageExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WatinSupport.cs" />
+    <Compile Include="Support\WatinSupport.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Bestille_kaffe.feature">
+    <None Include="Features\Bestille_kaffe.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Bestille_kaffe.feature.cs</LastGenOutput>
     </None>

@@ -1,7 +1,7 @@
 using TechTalk.SpecFlow;
 using WatiN.Core;
 
-namespace Frende.SpecDemo.Specs
+namespace Frende.SpecDemo.Specs.Support
 {
 	[Binding]
 	public static class WatinSupport
