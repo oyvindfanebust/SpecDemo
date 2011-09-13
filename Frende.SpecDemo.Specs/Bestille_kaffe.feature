@@ -3,20 +3,16 @@
 	Som en kodeape
 	Ønsker jeg å kunne bestille kaffe
 
-Scenario: Bestille en enkel espresso
-	Gitt at jeg har valgt en espresso
+Abstrakt Scenario: Bestille en enkelprodukt
+	Gitt at jeg har valgt en <produkt>
 	Når jeg bestiller
-	Så skal prisen være 10 kr
-
-Scenario: Bestille en dobbel espresso
-	Gitt at jeg har valgt en dobbel espresso
-	Når jeg bestiller
-	Så skal prisen være 20 kr
-
-Scenario: Bestille en cappucino
-	Gitt at jeg har valgt en cappucino
-	Når jeg bestiller
-	Så skal prisen være 20 kr
+	Så skal prisen være <pris> kr
+	
+	Eksempler:
+		| produkt         | pris |
+		| enkel espresso  | 10   |
+		| dobbel espresso | 20   |
+		| cappucino       | 20   |
 
 Scenario: Bestilling en dobbel espresso og en cappucino skal gi rabatt
 	Gitt at jeg har valgt en dobbel espresso
