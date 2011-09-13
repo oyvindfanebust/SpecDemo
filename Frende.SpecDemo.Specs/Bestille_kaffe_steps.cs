@@ -7,11 +7,11 @@ namespace Frende.SpecDemo.Specs
 	[Binding]
 	public class Bestille_kaffe_steps
 	{
-		[Given("at jeg har valgt en dobbel espresso")]
-		public void AtJegHarValgtEnDobbelEspresso()
+		[Given("at jeg har valgt en (dobbel espresso|cappucino)")]
+		public void AtJegHarValgtEnDobbelEspresso(string product)
 		{
 			Browser.GoTo("http://localhost:61604/Order");
-			Browser.SelectList("products").SelectByValue("dbl_espresso");
+			Browser.SelectList("products").Select(product);
 		}
 
 		[When(@"jeg bestiller")]
