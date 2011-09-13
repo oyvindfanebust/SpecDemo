@@ -1,4 +1,5 @@
-﻿using TechTalk.SpecFlow;
+﻿using NUnit.Framework;
+using TechTalk.SpecFlow;
 using WatiN.Core;
 
 namespace Frende.SpecDemo.Specs
@@ -9,14 +10,25 @@ namespace Frende.SpecDemo.Specs
 		[Given("at jeg har valgt en dobbel espresso")]
 		public void AtJegHarValgtEnDobbelEspresso()
 		{
-			FeatureContext.Current.Get<Browser>().GoTo("http://localhost:61604/Order");
-			FeatureContext.Current.Get<Browser>().SelectList("products").SelectByValue("dbl_espresso");
+			Browser.GoTo("http://localhost:61604/Order");
+			Browser.SelectList("products").SelectByValue("dbl_espresso");
 		}
 
 		[When(@"jeg bestiller")]
 		public void NarJegBestiller()
 		{
-			FeatureContext.Current.Get<Browser>().Button("order").Click();
+			Browser.Button("order").Click();
+		}
+
+		[Then(@"skal prisen være 20 kr")]
+		public void SaSkalPrisenVaere20Kr()
+		{
+			Assert.That(Browser.Element("price").Text, Is.EqualTo("20 kr"));
+		}
+
+		private static Browser Browser
+		{
+			get { return FeatureContext.Current.Get<Browser>(); }
 		}
 	}
 }
