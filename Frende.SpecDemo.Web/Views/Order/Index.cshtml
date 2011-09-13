@@ -1,10 +1,7 @@
 ﻿@using (Html.BeginForm("Price", "Order"))
 {
-	<select name="productname" id="productname">
-		<option value="-"></option>
-		<option value="espresso">Enkel espresso</option>
-		<option value="dbl_espresso">Dobbel espresso</option>
-		<option value="cappucino">Cappucino</option>
-	</select>
+	<input type="checkbox" id="espresso" name="products" value="espresso" /><label for="espresso">Espresso</label>
+	<input type="checkbox" id="dbl_espresso" name="products" value="dbl_espresso" /><label for="dbl_espresso">Dobbel espresso</label>
+	<input type="checkbox" id="cappucino" name="products" value="cappucino" /><label for="cappucino">Cappucino</label>
 	<input type="submit" id="order" value="Bestill" />
 }

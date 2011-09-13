@@ -11,17 +11,12 @@ namespace Frende.SpecDemo.Web.Controllers
 		}
 
 		[HttpPost]
-		public ActionResult Price(ProductModel product)
+		public ActionResult Price(string[] products)
 		{
 			var calculator = new Calculator();
-			var price = calculator.GetPrice(new[] { product.ProductName });
+			var price = calculator.GetPrice(products);
 			ViewBag.Price = price;
 			return View();
 		}
-	}
-
-	public class ProductModel
-	{
-		public string ProductName { get; set; }
 	}
 }

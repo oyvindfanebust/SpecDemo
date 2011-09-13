@@ -7,11 +7,16 @@ namespace Frende.SpecDemo.Specs
 	[Binding]
 	public class Bestille_kaffe_steps
 	{
+		[Given(@"at jeg er på ordresiden")]
+		public void GittAtJegErPaOrdresiden()
+		{
+			Browser.GoTo("http://localhost:61604/Order");			
+		}
+
 		[Given("at jeg har valgt en (.*)")]
 		public void AtJegHarValgtEnDobbelEspresso(string product)
 		{
-			Browser.GoTo("http://localhost:61604/Order");
-			Browser.SelectList("productname").Select(product);
+			Browser.CheckBox(Find.ByLabelText(product)).Click();
 		}
 
 		[When(@"jeg bestiller")]
