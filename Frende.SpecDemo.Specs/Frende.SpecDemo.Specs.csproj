@@ -69,6 +69,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Bestille_kaffe.feature</DependentUpon>
     </Compile>
+    <Compile Include="Pages\OrderPricePage.cs" />
     <Compile Include="Steps\Bestille_kaffe_steps.cs" />
     <Compile Include="Pages\OrderPage.cs" />
     <Compile Include="Support\PageExtensions.cs" />

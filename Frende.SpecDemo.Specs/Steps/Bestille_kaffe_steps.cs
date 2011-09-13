@@ -9,11 +9,6 @@ namespace Frende.SpecDemo.Specs.Steps
 	[Binding]
 	public class Bestille_kaffe_steps
 	{
-		private static OrderPage OrderPage
-		{
-			get { return Browser.Page<OrderPage>(); }
-		}
-
 		[Given(@"at jeg er på ordresiden")]
 		public void GittAtJegErPaOrdresiden()
 		{
@@ -35,7 +30,18 @@ namespace Frende.SpecDemo.Specs.Steps
 		[Then(@"skal prisen være ([0-9]+) kr")]
 		public void SaSkalPrisenVaere20Kr(int price)
 		{
-			Assert.That(Browser.Element("price").Text, Is.EqualTo(price + " kr"));
+			var actualPrice = OrderPricePage.GetPrice();
+			Assert.That(actualPrice, Is.EqualTo(price + " kr"));
+		}
+
+		private static OrderPricePage OrderPricePage
+		{
+			get { return Browser.Page<OrderPricePage>(); }
+		}
+
+		private static OrderPage OrderPage
+		{
+			get { return Browser.Page<OrderPage>(); }
 		}
 
 		private static Browser Browser
